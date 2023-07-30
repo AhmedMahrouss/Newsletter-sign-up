@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
+<title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+<!-- Start Container -->
+<div class="container">
+  <!-- Start Img Content -->
+<div class="imgcont">
+  <img src="assets/images/illustration-sign-up-mobile.svg">
+  <img src="assets/images/illustration-sign-up-desktop.svg">
+</div>
+<!-- End Img Content -->
+<!-- Start Content -->
+<div class="cont">
+<h1>Stay Updated!</h1>
+<p class="join">Join 60,000+ product managers receiving monthly updates on:</p>
+<div class="right">
+<p><img src="assets/images/icon-success.svg"> Product discovery and building what matters</p>
+<p><img src="assets/images/icon-success.svg"> Measuring to ensure updates are a success</p>
+<p><img src="assets/images/icon-success.svg"> And much more!</p>
+</div>
+<div class="mail">
+<label for="email">Email address</label>
+<br>
+<p id="msg">Valid email required</p>
+<input type="email" id="email"  placeholder="email@company.com">
+<button id="btn">Subscribe to monthly newsletter</button>
+</div>
+</div>
+<!-- End Content -->
+</div>
+<!-- End Container -->
+
+<div class="containerpos">
+    <!-- Start Container2 -->
+    <div class="container2">
+      <div class="rightimg">
+      <img src="assets/images/icon-success.svg">
+      </div>
+      <h1>Thanks for subscribing!</h1>
+      <p> A confirmation email has been sent to <span id="useremail"></span> 
+          Please open it and click the button inside to confirm your subscription.</p>
+          <button id="button">Dismiss message</button>
+  </div>
+  <!-- End Container2 -->
+</div>
+<script src="main.js"></script>
+</body>
+</html>

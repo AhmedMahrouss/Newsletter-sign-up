@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'cairo';
+    src: url(assets/fonts/LICENSE.txt);
+}
+@font-face {
+    font-family: 'cairo';
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'cairo';
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+:root{
+--DarkSlateGrey: hsl(234, 29%, 20%);
+--CharcoalGrey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+--Tomato: hsl(4, 100%, 67%);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'cairo';
+}
+body{
+width: 100%;
+min-height: 100vh;
+}
+.container .imgcont :nth-child(2){
+display: none;
+}
+.container .imgcont :first-child{
+width: 100%;
+}
+.cont{
+margin: 15px;
+}
+.cont h1{
+color: var(--DarkSlateGrey);
+font-size: 38px;
+margin-bottom: 20px;
+}
+.cont .join{
+width: 95%;
+font-size: 17px;
+color: var(--DarkSlateGrey);
+line-height: 25px;
+margin-bottom: 20px;
+}
+.cont p img{
+width: 25px;
+margin-bottom: 20px;
+margin-right: 15px;
+}
+.cont .right{
+line-height: 25px;
+margin-bottom: 10px;
+}
+.cont .right p{
+width: 90%;
+display: flex;
+direction: ltr;
+}
+.cont .mail{
+line-height: 35px;
+}
+.cont .mail p {
+direction: rtl;
+font-size: 12px;
+font-weight: bold;
+color:red;
+display: none;
+}
+.cont .mail label{
+color: var(--DarkSlateGrey);
+font-weight: bolder;
+}
+.cont .mail input{
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid var(--Grey);
+margin-bottom: 20px;
+font-size: 16px;
+outline: none;
+}
+.cont .mail button{
+background-color: var(--DarkSlateGrey);
+color: white;
+border: none;
+width: 100%;
+padding: 15px;
+border-radius: 10px;
+cursor: pointer;
+font-size: 16px;
+transition: .5s;
+}
+.cont .mail button:hover{
+background-color: var(--Tomato);
+box-shadow: 0px 0px 5px black , 0px 0px 15px white;
+}
+.containerpos{
+display: flex;
+justify-content: center;
+align-items: center;
+}.container2{
+width: 428px;
+height: 350px;
+background-color: white;
+margin-top: 200px;
+padding: 35px;
+border-radius: 25px;
+display: none;
+}
+.container2 .rightimg{
+margin-bottom: 20px;
+}
+.container2 .rightimg img{
+width: 50px
+}
+.container2 h1{
+margin-bottom: 20px;
+}
+.container2 p {
+margin-bottom: 28px;
+line-height: 25px;
+}
+.container2 button{
+width: 100%;
+border: none;
+background-color: var(--DarkSlateGrey);
+color: white;
+font-size: 16px;
+font-weight: bold;
+border-radius: 20px;
+padding: 15px;
+cursor: pointer;
+transition: .5s;
+}
+.container2 button:hover{
+background-color: var(--Tomato);
+}
+#useremail{
+color: black;
+font-weight: bold;
+}
+
+@media screen and (min-width:1440px){
+.container{
+display: flex;
+justify-content: space-around;
+align-items: center;
+direction: rtl;
+margin:45px;
+}
+.container .imgcont :nth-child(2){
+display: block;
+}
+.container .imgcont :first-child{
+display: none;
+}
+.cont{
+direction: ltr;
+}
+.cont .join{
+width: 94%;
+}
+
+}
